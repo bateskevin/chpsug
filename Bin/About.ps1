@@ -71,44 +71,8 @@ $HTML = html {
                 p "Die Usergruppe wurde im Oktober 2019 gegründet und hält monatlich Online meetups über verschiedene Technologien im Zusammenhang mit Powershell."
 
 
-            }
+                p "Kleines Easteregg auf der Aboutpage: Diese ganze Website ist mit Powershell generiert worden. Alles was du hier siehst, auf allen Pages von CHPSUG.com ist mit Powershell erstellt worden. Wenn du gerne sehen möchtest wie das geht komm doch mal in ein online Meetup :) !"
 
-            Div -id "somediv" -class "Container-Fluid" -Content {
-                h3 "Opensource Projekte"
-
-                $Link = a -href "https://github.com/bateskevin/PSAtlas" -Content {
-                    button -Content {
-                        "GitHub"
-                    } -Class "btn btn-outline-primary"
-                } -Target _blank 
-
-                $EventArr = @()
-
-                $EventHash1 = @{
-                    Projekt = "PSMD"
-                    Link = $Link
-                    Number = 1
-                }
-                $EventObj1 =  new-Object psobject -property $EventHash1
-                $EventArr += $EventObj1
-
-                $EventHash2 = @{
-                    Projekt = "PSAtlas"
-                    Link = $Link
-                    Number = 2
-                }
-                $EventObj2 =  new-Object psobject -property $EventHash2
-                $EventArr += $EventObj2
-
-                $EventHash3 = @{
-                    Projekt = "PSHarmonize"
-                    Link = $Link
-                    Number = 3
-                }
-                $EventObj3 =  new-Object psobject -property $EventHash3
-                $EventArr += $EventObj3
-
-                ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Projekt,Link -TableClass "table" -TheadClass "thead-dark"
             }
         
             } 
