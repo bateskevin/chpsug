@@ -8,6 +8,7 @@ $HTML = html {
         
         #Write-PSHTMLAsset -Type Script -Name BootStrap
         #Write-PSHTMLAsset -Type Style -Name BootStrap
+        link -rel 'icon' -href 'https://icon-library.net/images/powershell-icon/powershell-icon-27.jpg' -type 'image/x-icon'
         Link -href "Style/style.css" -rel stylesheet
         Link -href "Assets/BootStrap/bootstrap.min.css" -rel stylesheet
         Script -src "Assets/BootStrap/bootstrap.min.js"
