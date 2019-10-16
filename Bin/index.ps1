@@ -121,7 +121,7 @@ $HTML = html {
     }
 }
 
-$HTML | out-File -Filepath ..\Html\index.html -Encoding utf8
+$HTML | out-File -Filepath ..\index.html -Encoding utf8
 
 
-start ..\Html\index.html
+#start ..\Html\index.html
