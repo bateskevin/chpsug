@@ -55,7 +55,7 @@ $HTML = html {
             div -id "listmembers" -class "container-fluid" -Content {
                 h3 "CHPSUG Team"
                 
-                p "Momentan bin ich noch alleine, falls du gerne helfen würdest die Online Meetups mit zu organisieren, kannst du dich gerne bei mir melden!"
+                p "Momentan bin ich noch alleine, falls du gerne helfen wuerdest die Online Meetups mit zu organisieren, kannst du dich gerne bei mir melden!"
                     
             }
             
@@ -68,7 +68,7 @@ $HTML = html {
                 img -src "https://avatars0.githubusercontent.com/u/31886373?s=460&v=4" -alt "Kevin Bates" -height "300" -width "300" -Class "rounded-circle"
 
 
-                p "Ich bin ein junger DevOps Engineer mit Standort Bern und arbeite momentan bei der Swisscom im Cloud Umfeld. Ich brauche seit mehreren Jahren täglich Powershell und probiere, vor allem seit ich bei der Swisscom bin, alles was ich kann zu automatisieren mit Powershell. Neben Powershell bei der Arbeit habe ich einige Open-Source Projekte die ich auf Github pflege und bin ab und zu auch in anderen Powershell Open-Source Projekten am Werk."
+                p "Ich bin ein junger DevOps Engineer mit Standort Bern und arbeite momentan bei der Swisscom im Cloud Umfeld. Ich brauche seit mehreren Jahren taeglich Powershell und probiere, vor allem seit ich bei der Swisscom bin, alles was ich kann zu automatisieren mit Powershell. Neben Powershell bei der Arbeit habe ich einige Open-Source Projekte die ich auf Github pflege und bin ab und zu auch in anderen Powershell Open-Source Projekten am Werk."
 
 
             }

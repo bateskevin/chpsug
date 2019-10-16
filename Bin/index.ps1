@@ -55,7 +55,7 @@ $HTML = html {
             div -id "listmembers" -class "container-fluid" -Content {
                 h3 "Was ist eine Powershell Usergroup"
                 
-                p "Eine Powershell Usergroup ist eine Gruppe aus IT-Pros die ein grosses Interesse an Powershell haben, taeglich mit Powershell arbeiten oder sich fuer Powershell interessieren und gerne ihr Wissen ausbauen/teilen mouchten."
+                p "Eine Powershell Usergroup ist eine Gruppe aus IT-Pros die ein grosses Interesse an Powershell haben, taeglich mit Powershell arbeiten oder sich fuer Powershell interessieren und gerne ihr Wissen ausbauen/teilen moechten."
 
                 p {
                     "Falls du interessiert daran bist Teilzunehmen Fuelle das Formular unten kurz aus um dein Interesse zu zeigen:"
@@ -73,7 +73,7 @@ $HTML = html {
                     "Was macht die Schweizer Powershell Usergroup"
                 }
 
-                p "Die Schweizer Powershell Usergruppe trifft sich einmal monatlich online! In so einem online meetup finden Lightning Demons (15-20 Minuetige Praesentationen) statt und sie ermouglichen den Austausch mit anderen IT-Pros ueber Powershell."
+                p "Die Schweizer Powershell Usergruppe trifft sich einmal monatlich online! In so einem online meetup finden Lightning Demons (15-20 Minuetige Praesentationen) statt und sie ermoeglichen den Austausch mit anderen IT-Pros ueber Powershell."
 
                 p "Die Events finden jeweils am ersten Dienstag im Monat um 17:00 statt und sie dauern etwa eine Stunde. HIer die naechsten Events:"
 

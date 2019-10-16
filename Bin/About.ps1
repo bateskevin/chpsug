@@ -55,7 +55,7 @@ $HTML = html {
             div -id "listmembers" -class "container-fluid" -Content {
                 h3 "About Powershell User Groups"
                 
-                p "Powershell Usergroups sind Gruppen aus Powershell begeisterten IT-Pros. In solchen Gruppen hat es normalerweise Platz für alle Levels von Powershell skills und für viele verschiedene Ideen was man mit Powershell umsetzen kann. Viele Usergruppen treffen sich regelmässig online, oder auch vor Ort um miteinander über Powershell auszutauschen. Die Usergruppen haben verschiedene Kommunikationskanäle wie zum Beispiel Slack, wo sie einander gegebenenfalles auch unterstützen können, um so in ihrem proffesionellen Alltag, oder auch in Open Source Projekten weiter zu kommen."
+                p "Powershell Usergroups sind Gruppen aus Powershell begeisterten IT-Pros. In solchen Gruppen hat es normalerweise Platz fuer alle Levels von Powershell skills und fuer viele verschiedene Ideen was man mit Powershell umsetzen kann. Viele Usergruppen treffen sich regelmaessig online, oder auch vor Ort um miteinander ueber Powershell auszutauschen. Die Usergruppen haben verschiedene Kommunikationskanaele wie zum Beispiel Slack, wo sie einander gegebenenfalles auch unterstuetzen koennen, um so in ihrem proffesionellen Alltag, oder auch in Open Source Projekten weiter zu kommen."
                     
             }
             
@@ -68,10 +68,10 @@ $HTML = html {
                 #img -src "https://avatars0.githubusercontent.com/u/31886373?s=460&v=4" -alt "Kevin Bates" -height "300" -width "300" -Class "rounded-circle"
 
 
-                p "Die Usergruppe wurde im Oktober 2019 gegründet und hält monatlich Online meetups über verschiedene Technologien im Zusammenhang mit Powershell."
+                p "Die Usergruppe wurde im Oktober 2019 gegruendet und haelt monatlich Online meetups ueber verschiedene Technologien im Zusammenhang mit Powershell."
 
 
-                p "Kleines Easteregg auf der Aboutpage: Diese ganze Website ist mit Powershell generiert worden. Alles was du hier siehst, auf allen Pages von CHPSUG.com ist mit Powershell erstellt worden. Wenn du gerne sehen möchtest wie das geht komm doch mal in ein online Meetup :) !"
+                p "Kleines Easteregg auf der Aboutpage: Diese ganze Website ist mit Powershell generiert worden. Alles was du hier siehst, auf allen Pages von CHPSUG.com ist mit Powershell erstellt worden. Wenn du gerne sehen moechtest wie das geht komm doch mal in ein online Meetup :) !"
 
             }
         
