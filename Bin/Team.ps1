@@ -53,75 +53,62 @@ $HTML = html {
         
 
             div -id "listmembers" -class "container-fluid" -Content {
-                h3 "Was ist eine Powershell Usergroup"
+                h3 "CHPSUG Team"
                 
-                p "Eine Powershell Usergroup ist eine Gruppe aus IT-Pros die ein grosses Interesse an Powershell haben, taeglich mit Powershell arbeiten oder sich fuer Powershell interessieren und gerne ihr Wissen ausbauen/teilen mouchten."
-
-                p {
-                    "Falls du interessiert daran bist Teilzunehmen Fuelle das Formular unten kurz aus um dein Interesse zu zeigen:"
-                }
-                a -href "https://bit.ly/31jdJFC" -content {
-                    button -Content {
-                        "Zum Formular"
-                    } -Class "btn btn-outline-primary"
-                } -Target _blank    
+                p "Momentan bin ich noch alleine, falls du gerne helfen würdest die Online Meetups mit zu organisieren, kannst du dich gerne bei mir melden!"
+                    
             }
             
             div -id "removeuser" -class "container-fluid" -Content {
 
-                h3 {
-                    "Was macht die Schweizer Powershell Usergroup"
+                h2 {
+                    "Kevin Bates - Founder"
                 }
 
-                p "Die Schweizer Powershell Usergruppe trifft sich einmal monatlich online! In so einem online meetup finden Lightning Demons (15-20 Minuetige Praesentationen) statt und sie ermouglichen den Austausch mit anderen IT-Pros ueber Powershell."
+                img -src "IMG/Profile.jpg" -alt "Kevin Bates" -height "300" -width "300" -Class "rounded-circle"
 
-                p "Die Events finden jeweils am ersten Dienstag im Monat um 17:00 statt und sie dauern etwa eine Stunde. HIer die naechsten Events:"
+
+                p "Ich bin ein junger DevOps Engineer mit Standort Bern und arbeite momentan bei der Swisscom im Cloud Umfeld. Ich brauche seit mehreren Jahren täglich Powershell und probiere, vor allem seit ich bei der Swisscom bin, alles was ich kann zu automatisieren mit Powershell. Neben Powershell bei der Arbeit habe ich einige Open-Source Projekte die ich auf Github pflege und bin ab und zu auch in anderen Powershell Open-Source Projekten am Werk."
 
 
             }
 
             Div -id "somediv" -class "Container-Fluid" -Content {
-                h2 "Upcoming Events"
+                h3 "Opensource Projekte"
 
-                $Link = a -href "https://chpsug.com/meetup" -Content {
+                $Link = a -href "https://github.com/bateskevin/PSAtlas" -Content {
                     button -Content {
-                        "Online Meetup"
+                        "GitHub"
                     } -Class "btn btn-outline-primary"
                 } -Target _blank 
 
                 $EventArr = @()
 
                 $EventHash1 = @{
-                    Wo = "Online"
-                    wann = "Dienstag 5. November 2019"
-                    Uhrzeit = "17:00"
-                    LinkToJoin = $Link
+                    Projekt = "PSMD"
+                    Link = $Link
                     Number = 1
                 }
                 $EventObj1 =  new-Object psobject -property $EventHash1
                 $EventArr += $EventObj1
 
                 $EventHash2 = @{
-                    Wo = "Online"
-                    wann = "Dienstag 3. Dezember 2019"
-                    Uhrzeit = "17:00"
-                    LinkToJoin = $Link
+                    Projekt = "PSAtlas"
+                    Link = $Link
                     Number = 2
                 }
                 $EventObj2 =  new-Object psobject -property $EventHash2
                 $EventArr += $EventObj2
 
                 $EventHash3 = @{
-                    Wo = "Online"
-                    wann = "Dienstag 7. Januar 2020"
-                    Uhrzeit = "17:00"
-                    LinkToJoin = $Link
+                    Projekt = "PSHarmonize"
+                    Link = $Link
                     Number = 3
                 }
                 $EventObj3 =  new-Object psobject -property $EventHash3
                 $EventArr += $EventObj3
 
-                ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Wo,Wann,Uhrzeit,LinkToJoin -TableClass "table" -TheadClass "thead-dark"
+                ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Projekt,Link -TableClass "table" -TheadClass "thead-dark"
             }
         
             } 
@@ -141,7 +128,7 @@ $HTML = html {
     }
 }
 
-$HTML | out-File -Filepath ..\index.html -Encoding utf8
+$HTML | out-File -Filepath ..\Team.html -Encoding utf8
 
 
 #start ..\Html\index.html
