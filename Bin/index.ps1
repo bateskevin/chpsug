@@ -8,7 +8,7 @@ $HTML = html {
         Meta -name viewport -content_tag "width=device-width, initial-scale=1.0"
         #Write-PSHTMLAsset -Type Script -Name BootStrap
         #Write-PSHTMLAsset -Type Style -Name BootStrap
-        link -rel 'icon' -href 'IMG/CHSPSUG.png' -type 'image/x-icon'
+        link -rel 'icon' -href 'https://avatars1.githubusercontent.com/u/56639134?s=400&u=9c1a1dc1a8d8718534bf7d455042c7382cc419a0&v=4' -type 'image/x-icon'
         Link -href "Style/style.css" -rel stylesheet
         Link -href "Assets/BootStrap/bootstrap.min.css" -rel stylesheet
         Script -src "Assets/BootStrap/bootstrap.min.js"
