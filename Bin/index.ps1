@@ -4,8 +4,8 @@ $HTML = html {
     head {
         
 
-        #Bootstrap
         
+        Meta -name viewport -content_tag "width=device-width, initial-scale=1.0"
         #Write-PSHTMLAsset -Type Script -Name BootStrap
         #Write-PSHTMLAsset -Type Style -Name BootStrap
         link -rel 'icon' -href 'https://icon-library.net/images/powershell-icon/powershell-icon-27.jpg' -type 'image/x-icon'
