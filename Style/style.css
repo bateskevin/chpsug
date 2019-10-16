@@ -23,3 +23,7 @@ Div {
     margin: 60px;
     background: #fdfdfc;
 }
+
+img {
+    max-width:100% ;
+}

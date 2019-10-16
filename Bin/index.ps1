@@ -28,7 +28,7 @@ $HTML = html {
             
             p -Class "lead" -Content "Online Meetups mit deinen Powershell Peers" -Style ""
 
-        } -Style "background-image:url('https://i.pinimg.com/originals/ae/69/40/ae69407f5948d0e76ccb1e52af2eca2b.jpg');"
+        } -Style "background-image:url('https://i.pinimg.com/originals/ae/69/40/ae69407f5948d0e76ccb1e52af2eca2b.jpg');background-size: cover;"
         #h6 -Class "text-center" -Content {"Switzerland &#x2764 Powershell"}
         
 
@@ -44,7 +44,7 @@ $HTML = html {
                     button -Content {
                         "Zum Formular"
                     } -Class "btn btn-outline-primary"
-                }
+                } -Target _blank    
             }
             
             div -id "removeuser" -class "container-fluid" -Content {
@@ -67,7 +67,7 @@ $HTML = html {
                     button -Content {
                         "Online Meetup"
                     } -Class "btn btn-outline-primary"
-                }
+                } -Target _blank 
 
                 $EventArr = @()
 
