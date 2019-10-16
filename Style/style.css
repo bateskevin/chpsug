@@ -1,0 +1,25 @@
+body { background: #ebeaf5 !important;}
+
+p {
+    font-family: "QuickSand", sans-serif;
+  }
+
+  h1 {
+    font-family: "QuickSand", sans-serif;
+}
+h2 {
+    font-family: "QuickSand", sans-serif;
+}
+
+h3 {
+    font-family: "QuickSand", sans-serif;
+}
+
+table {
+    font-family: "QuickSand", sans-serif;
+}
+
+Div {
+    margin: 60px;
+    background: #fdfdfc;
+}
