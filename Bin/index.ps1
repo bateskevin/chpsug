@@ -34,7 +34,7 @@ $HTML = html {
                     }
 
                     li -Content {
-                        a -href "about.html" -Content {
+                        a -href "About.html" -Content {
                             "About"
                         }
                     }
