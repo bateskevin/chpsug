@@ -76,7 +76,7 @@ $HTML = html {
             Div -id "somediv" -class "Container-Fluid" -Content {
                 h3 "Opensource Projekte"
 
-                $Link = a -href "https://github.com/bateskevin/PSAtlas" -Content {
+                $Link = a -href "https://github.com/bateskevin/PSMD" -Content {
                     button -Content {
                         "GitHub"
                     } -Class "btn btn-outline-primary"
@@ -92,6 +92,12 @@ $HTML = html {
                 $EventObj1 =  new-Object psobject -property $EventHash1
                 $EventArr += $EventObj1
 
+                $Link = a -href "https://github.com/bateskevin/PSAtlas" -Content {
+                    button -Content {
+                        "GitHub"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank 
+
                 $EventHash2 = @{
                     Projekt = "PSAtlas"
                     Link = $Link
@@ -99,6 +105,12 @@ $HTML = html {
                 }
                 $EventObj2 =  new-Object psobject -property $EventHash2
                 $EventArr += $EventObj2
+
+                $Link = a -href "https://github.com/bateskevin/PSHarmonize" -Content {
+                    button -Content {
+                        "GitHub"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank 
 
                 $EventHash3 = @{
                     Projekt = "PSHarmonize"
