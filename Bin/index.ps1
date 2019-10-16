@@ -8,9 +8,9 @@ $HTML = html {
         
         #Write-PSHTMLAsset -Type Script -Name BootStrap
         #Write-PSHTMLAsset -Type Style -Name BootStrap
-        Link -href "..\Style\style.css" -rel stylesheet
-        Link -href "..\Assets\BootStrap\bootstrap.min.css" -rel stylesheet
-        Script -src "..\Assets\BootStrap\bootstrap.min.js"
+        Link -href "Style\style.css" -rel stylesheet
+        Link -href "Assets\BootStrap\bootstrap.min.css" -rel stylesheet
+        Script -src "Assets\BootStrap\bootstrap.min.js"
         link -href "https://fonts.googleapis.com/css?family=Quicksand&display=swap" -rel "stylesheet"
         
         #script -src "styles/chartjs/Chart.bundle.min.js" -type "text/javascript"
