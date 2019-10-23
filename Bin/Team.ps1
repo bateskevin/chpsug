@@ -54,9 +54,7 @@ $HTML = html {
 
             div -id "listmembers" -class "container-fluid" -Content {
                 h3 "CHPSUG Team"
-                
-                p "Momentan bin ich noch alleine, falls du gerne helfen wuerdest die Online Meetups mit zu organisieren, kannst du dich gerne bei mir melden!"
-                    
+                                    
             }
             
             div -id "removeuser" -class "container-fluid" -Content {
@@ -114,6 +112,70 @@ $HTML = html {
 
                 $EventHash3 = @{
                     Projekt = "PSHarmonize"
+                    Link = $Link
+                    Number = 3
+                }
+                $EventObj3 =  new-Object psobject -property $EventHash3
+                $EventArr += $EventObj3
+
+                ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Projekt,Link -TableClass "table" -TheadClass "thead-dark"
+            }
+
+            div -id "removeuser2" -class "container-fluid" -Content {
+
+                h2 {
+                    "Stephane Van Gulick  - Cofounder"
+                }
+
+                img -src "https://twitter.com/Stephanevg/photo" -alt "Stephane Van Gulick" -height "300" -width "300" -Class "rounded-circle"
+
+
+                p "Hauptziel von Stéphane ist es, IT-Abteilungen bei der Kostensenkung zu unterstützen, indem Prozesse und eine ordnungsgemäße Automatisierung mithilfe von Windows PowerShell implementiert werden. Stéphane hat in ganz Europa gearbeitet (Frankreich, Belgien, Niederlande, Deutschland ...) und ist jetzt in der Region Basel (Schweiz). Besonders gern automatisiert er Produkte aus dem Bereich „System Center“ (wie SCVMM oder sogar SCCM / ConfigMgr)."
+
+
+            }
+
+            Div -id "somediv" -class "Container-Fluid" -Content {
+                h3 "Opensource Projekte"
+
+                $Link = a -href "https://github.com/Stephanevg/PSHTML" -Content {
+                    button -Content {
+                        "GitHub"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank 
+
+                $EventArr = @()
+
+                $EventHash1 = @{
+                    Projekt = "PSHTML"
+                    Link = $Link
+                    Number = 1
+                }
+                $EventObj1 =  new-Object psobject -property $EventHash1
+                $EventArr += $EventObj1
+
+                $Link = a -href "https://github.com/Stephanevg/PSClassUtils" -Content {
+                    button -Content {
+                        "GitHub"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank 
+
+                $EventHash2 = @{
+                    Projekt = "PSClassUtils"
+                    Link = $Link
+                    Number = 2
+                }
+                $EventObj2 =  new-Object psobject -property $EventHash2
+                $EventArr += $EventObj2
+
+                $Link = a -href "https://github.com/Stephanevg/RegardsCitoyenPS" -Content {
+                    button -Content {
+                        "GitHub"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank 
+
+                $EventHash3 = @{
+                    Projekt = "RegardsCitoyenPS"
                     Link = $Link
                     Number = 3
                 }
