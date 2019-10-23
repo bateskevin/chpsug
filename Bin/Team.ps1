@@ -127,7 +127,7 @@ $HTML = html {
                     "Stephane Van Gulick  - Cofounder"
                 }
 
-                img -src "https://twitter.com/Stephanevg/photo" -alt "Stephane Van Gulick" -height "300" -width "300" -Class "rounded-circle"
+                img -src "https://frpsug.com/images/organizers/stephane_van_gulick.jpg" -alt "Stephane Van Gulick" -height "300" -width "300" -Class "rounded-circle"
 
 
                 p "Hauptziel von Stéphane ist es, IT-Abteilungen bei der Kostensenkung zu unterstützen, indem Prozesse und eine ordnungsgemäße Automatisierung mithilfe von Windows PowerShell implementiert werden. Stéphane hat in ganz Europa gearbeitet (Frankreich, Belgien, Niederlande, Deutschland ...) und ist jetzt in der Region Basel (Schweiz). Besonders gern automatisiert er Produkte aus dem Bereich „System Center“ (wie SCVMM oder sogar SCCM / ConfigMgr)."
