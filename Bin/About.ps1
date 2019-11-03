@@ -88,6 +88,10 @@ $HTML = html {
     
     
     footer -Content {
+        p "This Website was created using PSHTML"
+
+        img -src "https://github.com/Stephanevg/PSHTML/raw/master/Logos/logo_rectangle_fond_bleu.jpg" -alt "Powershell Logo" -height "50" -width "100" -Class "img-responsive"
+
         $PSHTMLLove
     }
 }
