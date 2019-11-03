@@ -137,7 +137,7 @@ $HTML = html {
     
     
     footer -Content {
-        Div -id "somediv" -class "Container-Fluid" -Content {
+        Div -id "somediv" -class "Container" -Content {
             p "This Website was created using PSHTML"
 
             img -src "https://github.com/Stephanevg/PSHTML/raw/master/Logos/logo_rectangle_fond_bleu.jpg" -alt "Powershell Logo" -height "50" -width "100" -Class "img-responsive"
