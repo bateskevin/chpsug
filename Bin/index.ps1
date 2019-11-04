@@ -128,11 +128,10 @@ $HTML = html {
                 h2 "Agenda for 5. November 2019"
 
                 ol {
-                    li "Was ist das Ziel der Swiss Powershell Usergroup"
-                    li "Call for Speakers"
-                    li "Themensammlung"
-                    
-                }
+                    li {"Was ist das Ziel der Swiss Powershell Usergroup"} -class "list-group-item-action"
+                    li {"Call for Speakers"}  -class "list-group-item-action"
+                    li {"Themensammlung"} -class "list-group-item-action" 
+                } -class "list-group"
             }
         
             } 
