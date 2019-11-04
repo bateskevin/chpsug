@@ -199,10 +199,8 @@ $HTML = html {
     
     footer -Content {
         Div -id "somediv" -class "Container" -Content {
-                p "This Website was created using PSHTML"
-
-                img -src "https://github.com/Stephanevg/PSHTML/raw/master/Logos/logo_rectangle_fond_bleu.jpg" -alt "Powershell Logo" -height "50" -width "100" -Class "img-responsive"
-
+            $PSHTMLlink = a {"PSHTML"} -href "https://github.com/Stephanevg/PSHTML"  
+            $PSHTMLLove = h6 "Generated with &#x2764 using $($PSHTMLlink)" -Class "text-center"
                 $PSHTMLLove
         }
     }
