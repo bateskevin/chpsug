@@ -127,45 +127,12 @@ $HTML = html {
             Div -id "somediv" -class "Container-Fluid" -Content {
                 h2 "Agenda for 5. November 2019"
 
-                $Link = a -href "https://chpsug.com/meetup" -Content {
-                    button -Content {
-                        "Online Meetup"
-                    } -Class "btn btn-outline-primary"
-                } -Target _blank 
-
-                $EventArr = @()
-
-                $EventHash1 = @{
-                    1 = "Begruessung"
-                    wann = "Dienstag 5. November 2019"
-                    Uhrzeit = "17:00"
-                    LinkToJoin = $Link
-                    Number = 1
+                ol {
+                    li "Was ist das Ziel der Swiss Powershell Usergroup"
+                    li "Call for Speakers"
+                    li "Themensammlung"
+                    
                 }
-                $EventObj1 =  new-Object psobject -property $EventHash1
-                $EventArr += $EventObj1
-
-                $EventHash2 = @{
-                    Wo = "Online"
-                    wann = "Dienstag 3. Dezember 2019"
-                    Uhrzeit = "17:00"
-                    LinkToJoin = $Link
-                    Number = 2
-                }
-                $EventObj2 =  new-Object psobject -property $EventHash2
-                $EventArr += $EventObj2
-
-                $EventHash3 = @{
-                    Wo = "Online"
-                    wann = "Dienstag 7. Januar 2020"
-                    Uhrzeit = "17:00"
-                    LinkToJoin = $Link
-                    Number = 3
-                }
-                $EventObj3 =  new-Object psobject -property $EventHash3
-                $EventArr += $EventObj3
-
-                ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Wo,Wann,Uhrzeit,LinkToJoin -TableClass "table" -TheadClass "thead-dark"
             }
         
             } 
