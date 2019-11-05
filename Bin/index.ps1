@@ -77,6 +77,17 @@ $HTML = html {
 
                 p "Die Events finden jeweils am ersten Dienstag im Monat um 17:00 statt und sie dauern etwa eine Stunde. HIer die naechsten Events:"
 
+                h3 {
+                    "Call for Speakers"
+                }
+
+                p "Wir suchen staendig neue Speakers, die bereit sind eine 10-15 minuetige Demo mit uns zu teilen. Kennst du dich mit einem Thema in Powershell, zum Beispiel ein Module oder den Umgang mit einer bestimmten Technologie in Powershell, aus? Dann melde dich hier beim Call for Speakers und trage dich ein!"
+
+                a -href "https://docs.google.com/forms/d/19JqHCIN9DFap4KPWsFuXS1N4jr-yPrSzXdPkEXuE_E0/viewform?edit_requested=true" -content {
+                    button -Content {
+                        "Call for Speakers!"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank
 
             }
 
@@ -185,7 +196,8 @@ $HTML = html {
             p "This Website was created using PSHTML"
 
             img -src "https://github.com/Stephanevg/PSHTML/raw/master/Logos/logo_rectangle_fond_bleu.jpg" -alt "Powershell Logo" -height "50" -width "100" -Class "img-responsive"
-
+            $PSHTMLlink = a {"PSHTML"} -href "https://github.com/Stephanevg/PSHTML"  
+            $PSHTMLLove = h6 "Generated with &#x2764 using $($PSHTMLlink)" -Class "text-center"
             $PSHTMLLove
         }
     }
