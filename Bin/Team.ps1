@@ -44,6 +44,12 @@ $HTML = html {
                             "Call for Speakers"
                         }
                     }
+
+                    li -Content {
+                        a -href "https://Twitter.com/chpsug" -Content {
+                            img -src "https://png.pngtree.com/element_our/sm/20180626/sm_5b321c96ef796.png" -alt "Powershell Logo" -height "25" -width "25" -Class "img-responsive"
+                        }
+                    }
                 }
             
         div -class 'jumbotron container-fluid' -content {

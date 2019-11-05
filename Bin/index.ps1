@@ -44,6 +44,12 @@ $HTML = html {
                             "Call for Speakers"
                         }
                     }
+
+                    li -Content {
+                        a -href "https://Twitter.com/chpsug" -Content {
+                            img -src "https://png.pngtree.com/element_our/sm/20180626/sm_5b321c96ef796.png" -alt "Powershell Logo" -height "25" -width "25" -Class "img-responsive"
+                        }
+                    }
                 }
             
         div -class 'jumbotron container-fluid' -content {
@@ -52,9 +58,17 @@ $HTML = html {
             
             img -src "https://3.bp.blogspot.com/-a7jPVdFk9Hw/W_XeTJX6JyI/AAAAAAAAC2c/HCtxP0wSSs0wEMKJOYq7pivEJaSVin92gCLcBGAs/s1600/powershell.png" -alt "Powershell Logo" -height "250" -width "250" -Class "img-responsive"
             
-            p -Class "lead" -Content "Online Meetups mit deinen Powershell Peers" -Style "color:#d5caf7;"
+            p -Class "lead" -Content {
 
-        } -Style "background-image:url('https://i.pinimg.com/originals/ae/69/40/ae69407f5948d0e76ccb1e52af2eca2b.jpg');background-size: cover;"
+                "Online Meetups mit deinen Powershell Peers" 
+            
+            } -Style "color:#d5caf7;"
+
+           
+             
+            
+
+        } -Style "background-image:url('https://i.pinimg.com/originals/ae/69/40/ae69407f5948d0e76ccb1e52af2eca2b.jpg');background-size: cover;" 
         #h6 -Class "text-center" -Content {"Switzerland &#x2764 Powershell"}
         
 
