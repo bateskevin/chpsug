@@ -66,9 +66,8 @@ $HTML = html {
                     } -Class "btn btn-outline-primary"
                 } -Target _blank    
             }
-            
-            div -id "removeuser" -class "container-fluid" -Content {
 
+            Div -Id "CFP" -Class "container-fluid" -Content {
                 h3 {
                     "Call for Speakers" 
                 }
@@ -80,6 +79,11 @@ $HTML = html {
                         "Call for Speakers!"
                     } -Class "btn btn-outline-primary"
                 } -Target _blank
+            }
+            
+            div -id "removeuser" -class "container-fluid" -Content {
+
+                
 
                 h3 {
                     "Was macht die Schweizer Powershell Usergroup"
