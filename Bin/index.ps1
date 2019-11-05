@@ -70,14 +70,6 @@ $HTML = html {
             div -id "removeuser" -class "container-fluid" -Content {
 
                 h3 {
-                    "Was macht die Schweizer Powershell Usergroup"
-                }
-
-                p "Die Schweizer Powershell Usergruppe trifft sich einmal monatlich online! In so einem online meetup finden Lightning Demons (15-20 Minuetige Praesentationen) statt und sie ermoeglichen den Austausch mit anderen IT-Pros ueber Powershell."
-
-                p "Die Events finden jeweils am ersten Dienstag im Monat um 17:00 statt und sie dauern etwa eine Stunde. HIer die naechsten Events:"
-
-                h3 {
                     "Call for Speakers"
                 }
 
@@ -88,6 +80,16 @@ $HTML = html {
                         "Call for Speakers!"
                     } -Class "btn btn-outline-primary"
                 } -Target _blank
+
+                h3 {
+                    "Was macht die Schweizer Powershell Usergroup"
+                }
+
+                p "Die Schweizer Powershell Usergruppe trifft sich einmal monatlich online! In so einem online meetup finden Lightning Demons (15-20 Minuetige Praesentationen) statt und sie ermoeglichen den Austausch mit anderen IT-Pros ueber Powershell."
+
+                p "Die Events finden jeweils am ersten Dienstag im Monat um 17:00 statt und sie dauern etwa eine Stunde. HIer die naechsten Events:"
+
+                
 
             }
 
