@@ -85,8 +85,14 @@ $HTML = html {
                         "Call for Speakers!"
                     } -Class "btn btn-outline-primary"
                 } -Target _blank
-
+                p ""
                 p "Hier kannst du auch Themen wuenschen, ueber die du gerne eine Lightning Demo sehen moechtest. Die Liste mit gewuenschten Themen findest du unter dem CFP Tab oben."
+                p ""
+                a -href "https://docs.google.com/forms/d/1SwysxKi4NskzDkjP4gLvrE_3G6-U9Gl9jviH2I1d4dw/viewform?edit_requested=true" -content {
+                    button -Content {
+                        "Reverse Call for Speakers!"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank
             }
             
             div -id "removeuser" -class "container-fluid" -Content {
