@@ -138,45 +138,11 @@ $HTML = html {
             Div -id "somediv" -class "Container-Fluid" -Content {
                 h2 "Agenda for 5. November 2019"
 
-                $Link = a -href "https://chpsug.com/meetup" -Content {
-                    button -Content {
-                        "Online Meetup"
-                    } -Class "btn btn-outline-primary"
-                } -Target _blank 
-
-                $EventArr = @()
-
-                $EventHash1 = @{
-                    1 = "Begruessung"
-                    wann = "Dienstag 5. November 2019"
-                    Uhrzeit = "17:00"
-                    LinkToJoin = $Link
-                    Number = 1
-                }
-                $EventObj1 =  new-Object psobject -property $EventHash1
-                $EventArr += $EventObj1
-
-                $EventHash2 = @{
-                    Wo = "Online"
-                    wann = "Dienstag 3. Dezember 2019"
-                    Uhrzeit = "17:00"
-                    LinkToJoin = $Link
-                    Number = 2
-                }
-                $EventObj2 =  new-Object psobject -property $EventHash2
-                $EventArr += $EventObj2
-
-                $EventHash3 = @{
-                    Wo = "Online"
-                    wann = "Dienstag 7. Januar 2020"
-                    Uhrzeit = "17:00"
-                    LinkToJoin = $Link
-                    Number = 3
-                }
-                $EventObj3 =  new-Object psobject -property $EventHash3
-                $EventArr += $EventObj3
-
-                ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Wo,Wann,Uhrzeit,LinkToJoin -TableClass "table" -TheadClass "thead-dark"
+                ol {
+                    li {"Was ist das Ziel der Swiss Powershell Usergroup"} -class "list-group-item-action"
+                    li {"Call for Speakers"}  -class "list-group-item-action"
+                    li {"Themensammlung"} -class "list-group-item-action" 
+                } -class "list-group"
             }
         
             } 
@@ -193,11 +159,17 @@ $HTML = html {
     
     footer -Content {
         Div -id "somediv" -class "Container" -Content {
+<<<<<<< HEAD
             p "This Website was created using PSHTML"
 
             img -src "https://github.com/Stephanevg/PSHTML/raw/master/Logos/logo_rectangle_fond_bleu.jpg" -alt "Powershell Logo" -height "50" -width "100" -Class "img-responsive"
             $PSHTMLlink = a {"PSHTML"} -href "https://github.com/Stephanevg/PSHTML"  
             $PSHTMLLove = h6 "Generated with &#x2764 using $($PSHTMLlink)" -Class "text-center"
+=======
+            
+            $PSHTMLlink = a {"PSHTML"} -href "https://github.com/Stephanevg/PSHTML"  
+     $PSHTMLLove = h6 "Generated with &#x2764 using $($PSHTMLlink)" -Class "text-center"
+>>>>>>> 6590cac2d03dcdf131a24c7485f0da3d05f5511e
             $PSHTMLLove
         }
     }

@@ -73,6 +73,13 @@ $HTML = html {
 
                 p "Kleines Easteregg auf der Aboutpage: Diese ganze Website ist mit Powershell generiert worden. Alles was du hier siehst, auf allen Pages von CHPSUG.com ist mit Powershell erstellt worden. Wenn du gerne sehen moechtest wie das geht komm doch mal in ein online Meetup :) !"
 
+                p "This Website was created using PSHTML"
+
+                a -Content{
+                    img -src "https://github.com/Stephanevg/PSHTML/raw/master/Logos/logo_rectangle_fond_bleu.jpg" -alt "Powershell Logo" -height "50" -width "100" -Class "img-responsive"
+                } -href "https://github.com/Stephanevg/PSHTML"
+                
+
             }
         
             } 
@@ -89,11 +96,9 @@ $HTML = html {
     
     footer -Content {
         Div -id "somediv" -class "Container" -Style "text-align: center" -Content {
-            p "This Website was created using PSHTML"
-
-            img -src "https://github.com/Stephanevg/PSHTML/raw/master/Logos/logo_rectangle_fond_bleu.jpg" -alt "Powershell Logo" -height "50" -width "100" -Class "img-responsive"
             $PSHTMLlink = a {"PSHTML"} -href "https://github.com/Stephanevg/PSHTML"  
-            $PSHTMLLove = h6 "Generated with &#x2764 using $($PSHTMLlink)" -Class "text-center"
+     $PSHTMLLove = h6 "Generated with &#x2764 using $($PSHTMLlink)" -Class "text-center"
+
             $PSHTMLLove
         }
     }
