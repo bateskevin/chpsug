@@ -38,6 +38,12 @@ $HTML = html {
                             "About"
                         }
                     }
+
+                    li -Content {
+                        a -href "CFP.html" -Content {
+                            "Call for Speakers"
+                        }
+                    }
                 }
             
         div -class 'jumbotron container-fluid' -content {
@@ -66,7 +72,7 @@ $HTML = html {
                 img -src "https://avatars0.githubusercontent.com/u/31886373?s=460&v=4" -alt "Kevin Bates" -height "300" -width "300" -Class "rounded-circle"
 
 
-                p "Ich bin ein junger DevOps Engineer mit Standort Bern und arbeite momentan bei der Swisscom im Cloud Umfeld. Ich brauche seit mehreren Jahren taeglich Powershell und probiere, vor allem seit ich bei der Swisscom bin, alles was ich kann zu automatisieren mit Powershell. Neben Powershell bei der Arbeit habe ich einige Open-Source Projekte die ich auf Github pflege und bin ab und zu auch in anderen Powershell Open-Source Projekten am Werk."
+                p "Kevin ist ein junger Devops Engineer und arbeitet momentan bei der Swisscom in Bern. Automation steht bei ihm im Zentrum. In seinem Alltag automatisiert er in einem Windows Server Umfeld verschiedenste Prozesse mit Powershell. Er hat schon einige Jahre Erfahrung mit Powershell und hat schon an einigen Open Source Projekten mitgearbeitet. Unter anderem hat er auch eigene Projekte, die er aktiv auf Github mangaged. Die Swiss Powershell Usergroup wurde im Oktober 2019 von ihm gegruendet. Wenn er nicht mit Powershell beschaeftigt ist, macht er viel Musik. Siehe PSHarmonize :)"
 
 
             }
@@ -130,7 +136,7 @@ $HTML = html {
                 img -src "https://frpsug.com/images/organizers/stephane_van_gulick.jpg" -alt "Stephane Van Gulick" -height "300" -width "300" -Class "rounded-circle"
 
 
-                p "Hauptziel von Stéphane ist es, IT-Abteilungen bei der Kostensenkung zu unterstützen, indem Prozesse und eine ordnungsgemäße Automatisierung mithilfe von Windows PowerShell implementiert werden. Stéphane hat in ganz Europa gearbeitet (Frankreich, Belgien, Niederlande, Deutschland ...) und ist jetzt in der Region Basel (Schweiz). Besonders gern automatisiert er Produkte aus dem Bereich „System Center“ (wie SCVMM oder sogar SCCM / ConfigMgr)."
+                p "Hauptziel von Stephane ist es, IT-Abteilungen bei der Kostensenkung zu unterstuetzen, indem Prozesse und eine ordnungsgemaesse Automatisierung mithilfe von Windows PowerShell implementiert werden. Stephane hat in ganz Europa gearbeitet (Frankreich, Belgien, Niederlande, Deutschland ...) und ist jetzt in der Region Basel (Schweiz). Besonders gern automatisiert er Produkte aus dem Bereich System Center (wie SCVMM oder sogar SCCM / ConfigMgr). Er kennt sich aber auch mit CI/CD und anderen Powershell technologien aus. Er ist ausserdem seit mehreren Jahren ein Powershell MVP und arbeitet aktiv in der Powershell Community in Frankreich und der Schweiz."
 
 
             }

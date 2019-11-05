@@ -38,6 +38,12 @@ $HTML = html {
                             "About"
                         }
                     }
+
+                    li -Content {
+                        a -href "CFP.html" -Content {
+                            "Call for Speakers"
+                        }
+                    }
                 }
             
         div -class 'jumbotron container-fluid' -content {

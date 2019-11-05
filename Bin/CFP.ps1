@@ -59,32 +59,44 @@ $HTML = html {
         
 
             div -id "listmembers" -class "container-fluid" -Content {
-                h3 "About Powershell User Groups"
+                h2 "Call for Speakers"
                 
-                p "Powershell Usergroups sind Gruppen aus Powershell begeisterten IT-Pros. In solchen Gruppen hat es normalerweise Platz fuer alle Levels von Powershell skills und fuer viele verschiedene Ideen was man mit Powershell umsetzen kann. Viele Usergruppen treffen sich regelmaessig online, oder auch vor Ort um miteinander ueber Powershell auszutauschen. Die Usergruppen haben verschiedene Kommunikationskanaele wie zum Beispiel Slack, wo sie einander gegebenenfalles auch unterstuetzen koennen, um so in ihrem proffesionellen Alltag, oder auch in Open Source Projekten weiter zu kommen."
+                p "Ein Call for Speakers ist ein Aufruf and Leute die interessiert sind ihr Wissen zu teilen. HIer auf der Seite der Swiss Powershell Usergroup ist das natuerlich im Kontext von Powershell. Du kennst dich mit einem Thema in Powershell gut aus, zum Beispiel mit einer Technologie, die ein Interface zu Powershell hat, oder mit einem Modul das viel gebraucht wird, oder sogar mit einem Modul welches du slebst geschrieben hast. Zeige es uns!"
+
+                h3 "Lightning Demos"
+
+                p "Bei uns in der Swiss Powershell Usergroup sprechen wir von Lightning Demos. Das sind kleinere Vortaege oder eben Demos, die sich in einem Rahmen von etwa 10-20 Minuten halten. Dein Thema sollte also in einen solchen Timeslot hineinpassen. Wir bitten dich also dein Thema auch so vorzubereiten!"
+
+                h3 "Wie kann ich eine Lightning Demo submitten?"
+
+                p "Ganz einfach! Klicke auf den Button unten und fuelle das Google Formular aus. Deine Lightning Demo wird von unserem Team evaluiert und du wirst von uns kontaktiert mit dem Datum an dem du deine Lightning Demo halten kannst."
                     
+                p ""
+
+                a -href "https://docs.google.com/forms/d/19JqHCIN9DFap4KPWsFuXS1N4jr-yPrSzXdPkEXuE_E0/viewform?edit_requested=true" -content {
+                    button -Content {
+                        "Call for Speakers!"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank
             }
             
             div -id "removeuser" -class "container-fluid" -Content {
 
                 h2 {
-                    "About Powershell User Group Switzerland"
+                    "Reverse Call for Speakers"
                 }
 
-                #img -src "https://avatars0.githubusercontent.com/u/31886373?s=460&v=4" -alt "Kevin Bates" -height "300" -width "300" -Class "rounded-circle"
+                p "Hier kannst du auch Themen wuenschen, ueber die du gerne eine Lightning Demo sehen moechtest. Die Liste mit gewuenschten Themen findest du unten."
+                p ""
+                a -href "https://docs.google.com/forms/d/1SwysxKi4NskzDkjP4gLvrE_3G6-U9Gl9jviH2I1d4dw/viewform?edit_requested=true" -content {
+                    button -Content {
+                        "Reverse Call for Speakers!"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank
 
+                h3 "Resultate aus dem Reverse Call for Speakers"
 
-                p "Die Usergruppe wurde im Oktober 2019 gegruendet und haelt monatlich Online meetups ueber verschiedene Technologien im Zusammenhang mit Powershell."
-
-
-                p "Kleines Easteregg auf der Aboutpage: Diese ganze Website ist mit Powershell generiert worden. Alles was du hier siehst, auf allen Pages von CHPSUG.com ist mit Powershell erstellt worden. Wenn du gerne sehen moechtest wie das geht komm doch mal in ein online Meetup :) !"
-
-                p "This Website was created using PSHTML"
-
-                a -Content{
-                    img -src "https://github.com/Stephanevg/PSHTML/raw/master/Logos/logo_rectangle_fond_bleu.jpg" -alt "Powershell Logo" -height "50" -width "100" -Class "img-responsive"
-                } -href "https://github.com/Stephanevg/PSHTML"
-                
+                p "Hier findest du die Wuensche der Swiss Powershell Usergroup. (sobald es welche gibt ;) ) Du kennst dich mit einem der Themen aus? Submitte eine Session!"
 
             }
         
@@ -110,7 +122,7 @@ $HTML = html {
     }
 }
 
-$HTML | out-File -Filepath ..\About.html -Encoding utf8
+$HTML | out-File -Filepath ..\CFP.html -Encoding utf8
 
 
 #start ..\Html\index.html
