@@ -70,7 +70,7 @@ $HTML = html {
             div -id "removeuser" -class "container-fluid" -Content {
 
                 h3 {
-                    "Call for Speakers"
+                    "Call for Speakers" 
                 }
 
                 p "Wir suchen staendig neue Speakers, die bereit sind eine 10-15 minuetige Demo mit uns zu teilen. Kennst du dich mit einem Thema in Powershell, zum Beispiel ein Module oder den Umgang mit einer bestimmten Technologie in Powershell, aus? Dann melde dich hier beim Call for Speakers und trage dich ein!"
