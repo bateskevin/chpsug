@@ -160,7 +160,7 @@ $HTML = html {
 
                 ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Wo,Wann,Uhrzeit,LinkToJoin -TableClass "table" -TheadClass "thead-dark"
             }
-
+            <#
             Div -id "somediv" -class "Container-Fluid" -Content {
                 h2 "Agenda for 5. November 2019"
 
@@ -170,6 +170,7 @@ $HTML = html {
                     li {"Themensammlung"} -class "list-group-item-action" 
                 } -class "list-group"
             }
+            #>
         
             } 
 
