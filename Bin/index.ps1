@@ -38,6 +38,18 @@ $HTML = html {
                             "About"
                         }
                     }
+
+                    li -Content {
+                        a -href "CFP.html" -Content {
+                            "Call for Speakers"
+                        }
+                    }
+
+                    li -Content {
+                        a -href "https://Twitter.com/chpsug" -Content {
+                            img -src "https://png.pngtree.com/element_our/sm/20180626/sm_5b321c96ef796.png" -alt "Powershell Logo" -height "25" -width "25" -Class "img-responsive"
+                        } -Target _blank
+                    }
                 }
             
         div -class 'jumbotron container-fluid' -content {
@@ -46,9 +58,17 @@ $HTML = html {
             
             img -src "https://3.bp.blogspot.com/-a7jPVdFk9Hw/W_XeTJX6JyI/AAAAAAAAC2c/HCtxP0wSSs0wEMKJOYq7pivEJaSVin92gCLcBGAs/s1600/powershell.png" -alt "Powershell Logo" -height "250" -width "250" -Class "img-responsive"
             
-            p -Class "lead" -Content "Online Meetups mit deinen Powershell Peers" -Style "color:#d5caf7;"
+            p -Class "lead" -Content {
 
-        } -Style "background-image:url('https://i.pinimg.com/originals/ae/69/40/ae69407f5948d0e76ccb1e52af2eca2b.jpg');background-size: cover;"
+                "Online Meetups mit deinen Powershell Peers" 
+            
+            } -Style "color:#d5caf7;"
+
+           
+             
+            
+
+        } -Style "background-image:url('https://i.pinimg.com/originals/ae/69/40/ae69407f5948d0e76ccb1e52af2eca2b.jpg');background-size: cover;" 
         #h6 -Class "text-center" -Content {"Switzerland &#x2764 Powershell"}
         
 
@@ -66,20 +86,38 @@ $HTML = html {
                     } -Class "btn btn-outline-primary"
                 } -Target _blank    
             }
-            
-            div -id "removeuser" -class "container-fluid" -Content {
 
+            Div -Id "CFP" -Class "container-fluid" -Content {
                 h3 {
                     "Call for Speakers" 
                 }
 
                 p "Wir suchen staendig neue Speakers, die bereit sind eine 10-15 minuetige Demo mit uns zu teilen. Kennst du dich mit einem Thema in Powershell, zum Beispiel ein Module oder den Umgang mit einer bestimmten Technologie in Powershell, aus? Dann melde dich hier beim Call for Speakers und trage dich ein!"
 
+                p "Fuer mehr Informationen ueber den Call for Speakers gehe auf den Call for Speakers Tab:"
+
+                a -href "CFP.html" -Content {"Mehr Informationen ueber Call for Speakers"}
+
+                p ""
+
                 a -href "https://docs.google.com/forms/d/19JqHCIN9DFap4KPWsFuXS1N4jr-yPrSzXdPkEXuE_E0/viewform?edit_requested=true" -content {
                     button -Content {
                         "Call for Speakers!"
                     } -Class "btn btn-outline-primary"
                 } -Target _blank
+                p ""
+                p "Hier kannst du auch Themen wuenschen, ueber die du gerne eine Lightning Demo sehen moechtest. Die Liste mit gewuenschten Themen findest du unter dem CFP Tab oben."
+                p ""
+                a -href "https://docs.google.com/forms/d/1SwysxKi4NskzDkjP4gLvrE_3G6-U9Gl9jviH2I1d4dw/viewform?edit_requested=true" -content {
+                    button -Content {
+                        "Reverse Call for Speakers!"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank
+            }
+            
+            div -id "removeuser" -class "container-fluid" -Content {
+
+                
 
                 h3 {
                     "Was macht die Schweizer Powershell Usergroup"
@@ -87,7 +125,7 @@ $HTML = html {
 
                 p "Die Schweizer Powershell Usergruppe trifft sich einmal monatlich online! In so einem online meetup finden Lightning Demons (15-20 Minuetige Praesentationen) statt und sie ermoeglichen den Austausch mit anderen IT-Pros ueber Powershell."
 
-                p "Die Events finden jeweils am ersten Dienstag im Monat um 17:00 statt und sie dauern etwa eine Stunde. HIer die naechsten Events:"
+                p "Die Events finden jeweils am ersten Dienstag im Monat um 20:00 statt und sie dauern etwa eine Stunde. HIer die naechsten Events:"
 
                 
 
