@@ -106,8 +106,8 @@ $HTML = html {
 
                 $EventHash1 = @{
                     Wo = "Online"
-                    wann = "Dienstag 5. November 2019"
-                    Uhrzeit = "17:00"
+                    wann = "Dienstag 3. Dezember 2019"
+                    Uhrzeit = "20:00"
                     LinkToJoin = $Link
                     Number = 1
                 }
@@ -116,8 +116,8 @@ $HTML = html {
 
                 $EventHash2 = @{
                     Wo = "Online"
-                    wann = "Dienstag 3. Dezember 2019"
-                    Uhrzeit = "17:00"
+                    wann = "Dienstag 7. Januar 2020"
+                    Uhrzeit = "20:00"
                     LinkToJoin = $Link
                     Number = 2
                 }
@@ -126,8 +126,8 @@ $HTML = html {
 
                 $EventHash3 = @{
                     Wo = "Online"
-                    wann = "Dienstag 7. Januar 2020"
-                    Uhrzeit = "17:00"
+                    wann = "Dienstag 4. Februar 2020"
+                    Uhrzeit = "20:00"
                     LinkToJoin = $Link
                     Number = 3
                 }
@@ -136,7 +136,7 @@ $HTML = html {
 
                 ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Wo,Wann,Uhrzeit,LinkToJoin -TableClass "table" -TheadClass "thead-dark"
             }
-
+            <#
             Div -id "somediv" -class "Container-Fluid" -Content {
                 h2 "Agenda for 5. November 2019"
 
@@ -146,6 +146,7 @@ $HTML = html {
                     li {"Themensammlung"} -class "list-group-item-action" 
                 } -class "list-group"
             }
+            #>
         
             } 
 
