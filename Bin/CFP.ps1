@@ -99,11 +99,27 @@ $HTML = html {
                         "Reverse Call for Speakers!"
                     } -Class "btn btn-outline-primary"
                 } -Target _blank
+             
 
+            }
+
+            Div -id "somediv" -class "Container-Fluid" -Content {
                 h3 "Resultate aus dem Reverse Call for Speakers"
 
-                p "Hier findest du die Wuensche der Swiss Powershell Usergroup. (sobald es welche gibt ;) ) Du kennst dich mit einem der Themen aus? Submitte eine Session!"
+                $EventArr = @()
 
+                $EventHash1 = @{
+                    Thema = "Azure Automation"
+                    Beschreibung = "Was ist unter Azure Automation zu verstehen und wie kann Azure Automation in den Job als DevOps Engineer eingesetzt werden, wo hilft das uns, wo nicht. Kurze praktische Beispiele."
+                    Number = 1
+                }
+                $EventObj1 =  new-Object psobject -property $EventHash1
+                $EventArr += $EventObj1
+
+                $EventObj3 =  new-Object psobject -property $EventHash3
+                $EventArr += $EventObj3
+
+                ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Thema,Beschreibung -TableClass "table" -TheadClass "thead-dark"
             }
         
             } 
