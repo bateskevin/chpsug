@@ -97,7 +97,7 @@ $HTML = html {
 
                 p "Die Schweizer Powershell Usergruppe trifft sich einmal monatlich online! In so einem online meetup finden Lightning Demons (15-20 Minuetige Praesentationen) statt und sie ermoeglichen den Austausch mit anderen IT-Pros ueber Powershell."
 
-                p "Die Events finden jeweils am ersten Dienstag im Monat um 17:00 statt und sie dauern etwa eine Stunde. HIer die naechsten Events:"
+                p "Die Events finden jeweils am ersten Dienstag im Monat um 20:00 statt und sie dauern etwa eine Stunde. HIer die naechsten Events:"
 
                 
 
@@ -140,8 +140,8 @@ $HTML = html {
 
                 $EventHash1 = @{
                     Wo = "Online"
-                    wann = "Dienstag 5. November 2019"
-                    Uhrzeit = "17:00"
+                    wann = "Dienstag 3. Dezember 2019"
+                    Uhrzeit = "20:00"
                     LinkToJoin = $Link
                     Number = 1
                 }
@@ -150,8 +150,8 @@ $HTML = html {
 
                 $EventHash2 = @{
                     Wo = "Online"
-                    wann = "Dienstag 3. Dezember 2019"
-                    Uhrzeit = "17:00"
+                    wann = "Dienstag 7. Januar 2020"
+                    Uhrzeit = "20:00"
                     LinkToJoin = $Link
                     Number = 2
                 }
@@ -160,8 +160,8 @@ $HTML = html {
 
                 $EventHash3 = @{
                     Wo = "Online"
-                    wann = "Dienstag 7. Januar 2020"
-                    Uhrzeit = "17:00"
+                    wann = "Dienstag 4. Februar 2020"
+                    Uhrzeit = "20:00"
                     LinkToJoin = $Link
                     Number = 3
                 }
