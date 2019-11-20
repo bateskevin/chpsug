@@ -86,34 +86,6 @@ $HTML = html {
                     } -Class "btn btn-outline-primary"
                 } -Target _blank    
             }
-
-            Div -Id "CFP" -Class "container-fluid" -Content {
-                h3 {
-                    "Call for Speakers" 
-                }
-
-                p "Wir suchen staendig neue Speakers, die bereit sind eine 10-15 minuetige Demo mit uns zu teilen. Kennst du dich mit einem Thema in Powershell, zum Beispiel ein Module oder den Umgang mit einer bestimmten Technologie in Powershell, aus? Dann melde dich hier beim Call for Speakers und trage dich ein!"
-
-                p "Fuer mehr Informationen ueber den Call for Speakers gehe auf den Call for Speakers Tab:"
-
-                a -href "CFP.html" -Content {"Mehr Informationen ueber Call for Speakers"}
-
-                p ""
-
-                a -href "https://docs.google.com/forms/d/19JqHCIN9DFap4KPWsFuXS1N4jr-yPrSzXdPkEXuE_E0/viewform?edit_requested=true" -content {
-                    button -Content {
-                        "Call for Speakers!"
-                    } -Class "btn btn-outline-primary"
-                } -Target _blank
-                p ""
-                p "Hier kannst du auch Themen wuenschen, ueber die du gerne eine Lightning Demo sehen moechtest. Die Liste mit gewuenschten Themen findest du unter dem CFP Tab oben."
-                p ""
-                a -href "https://docs.google.com/forms/d/1SwysxKi4NskzDkjP4gLvrE_3G6-U9Gl9jviH2I1d4dw/viewform?edit_requested=true" -content {
-                    button -Content {
-                        "Reverse Call for Speakers!"
-                    } -Class "btn btn-outline-primary"
-                } -Target _blank
-            }
             
             div -id "removeuser" -class "container-fluid" -Content {
 
@@ -133,6 +105,30 @@ $HTML = html {
 
             Div -id "somediv" -class "Container-Fluid" -Content {
                 h2 "Upcoming Events"
+
+                #Next Event
+
+                $EventArr = @()
+
+                $Twitterhandle = a -href "https://Twitter.com/_bateskevin" -Content {
+                    button -Content {
+                        "_bateskevin"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank
+
+                $EventHash1 = @{
+                    Titel = "Powershell 7 Roadmap und experimentelle Features"
+                    Synopsis = "Ich moechte euch aufzeigen, was wir von Powershell 7 alles erwarten koennen und euch damit motivieren die Previews mal anzuschauen. Powershell 7 wird im Dezember oder im Januar offiziell released. Es gibt aber schon mehrere Previews in denen man die neuen Features schon einmal testen kann. Ein paar dieser Featuers moechte ich euch gerne zeigen."
+                    Speaker = "Kevin Bates"
+                    TwitterHandle = $Twitterhandle
+                    Number = 1
+                }
+                $EventObj1 =  new-Object psobject -property $EventHash1
+                $EventArr += $EventObj1
+
+                ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Titel,Synopsis,Speaker,TwitterHandle -TableClass "table" -TheadClass "thead-dark"
+
+                #Upcoming Events
 
                 $Link = a -href "https://join.freeconferencecall.com/chpsug" -Content {
                     button -Content {
@@ -174,6 +170,36 @@ $HTML = html {
 
                 ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Wo,Wann,Uhrzeit,LinkToJoin -TableClass "table" -TheadClass "thead-dark"
             }
+
+            Div -Id "CFP" -Class "container-fluid" -Content {
+                h3 {
+                    "Call for Speakers" 
+                }
+
+                p "Wir suchen staendig neue Speakers, die bereit sind eine 10-15 minuetige Demo mit uns zu teilen. Kennst du dich mit einem Thema in Powershell, zum Beispiel ein Module oder den Umgang mit einer bestimmten Technologie in Powershell, aus? Dann melde dich hier beim Call for Speakers und trage dich ein!"
+
+                p "Fuer mehr Informationen ueber den Call for Speakers gehe auf den Call for Speakers Tab:"
+
+                a -href "CFP.html" -Content {"Mehr Informationen ueber Call for Speakers"}
+
+                p ""
+
+                a -href "https://docs.google.com/forms/d/19JqHCIN9DFap4KPWsFuXS1N4jr-yPrSzXdPkEXuE_E0/viewform?edit_requested=true" -content {
+                    button -Content {
+                        "Call for Speakers!"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank
+                p ""
+                p "Hier kannst du auch Themen wuenschen, ueber die du gerne eine Lightning Demo sehen moechtest. Die Liste mit gewuenschten Themen findest du unter dem CFP Tab oben."
+                p ""
+                a -href "https://docs.google.com/forms/d/1SwysxKi4NskzDkjP4gLvrE_3G6-U9Gl9jviH2I1d4dw/viewform?edit_requested=true" -content {
+                    button -Content {
+                        "Reverse Call for Speakers!"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank
+            }
+
+
             <#
             Div -id "somediv" -class "Container-Fluid" -Content {
                 h2 "Agenda for 5. November 2019"
