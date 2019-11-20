@@ -104,9 +104,11 @@ $HTML = html {
             }
 
             Div -id "somediv" -class "Container-Fluid" -Content {
-                h2 "Upcoming Events"
+                
 
                 #Next Event
+
+                h2 "Next Event - 3. Dezember"
 
                 $EventArr = @()
 
@@ -129,6 +131,8 @@ $HTML = html {
                 ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Titel,Synopsis,Speaker,TwitterHandle -TableClass "table" -TheadClass "thead-dark"
 
                 #Upcoming Events
+
+                h2 "Upcoming Events"
 
                 $Link = a -href "https://join.freeconferencecall.com/chpsug" -Content {
                     button -Content {
