@@ -128,6 +128,16 @@ $HTML = html {
                 $EventObj1 =  new-Object psobject -property $EventHash1
                 $EventArr += $EventObj1
 
+                $EventHash2 = @{
+                    Titel = "Website auf Github hosten"
+                    Synopsis = "in dieser Session moechte ich euch zeigen wie man eine mit Powersehll generierte website auf github kostenlos hosten kann. Backend Github Pages, Frontend PSHTML"
+                    Speaker = "Kevin Bates"
+                    TwitterHandle = $Twitterhandle
+                    Number = 2
+                }
+                $EventObj1 =  new-Object psobject -property $EventHash2
+                $EventArr += $EventObj1
+
                 ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Titel,Synopsis,Speaker,TwitterHandle -TableClass "table" -TheadClass "thead-dark"
 
                 #Upcoming Events
