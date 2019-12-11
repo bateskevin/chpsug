@@ -103,11 +103,23 @@ $HTML = html {
 
             }
 
+            
             Div -id "somediv" -class "Container-Fluid" -Content {
                 
+                #Event verpasst?
+
+                h2 "Hast du einen Event verpasst?"
+
+                p "Kein Problem! Die Sessions werden in der Regel aufgenommen und auf unserem Youtube Kanal (So schnell wie es geht) publiziert"
+
+                a -href "https://www.youtube.com/channel/UCZdQatfMu-gAZMzSXMlCt2w" -content {
+                    button -Content {
+                        "Zum Youtube Kanal"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank
 
                 #Next Event
-
+                <#
                 h2 "Next Event - 3. Dezember"
 
                 $EventArr = @()
@@ -137,8 +149,8 @@ $HTML = html {
                 }
                 $EventObj1 =  new-Object psobject -property $EventHash2
                 $EventArr += $EventObj1
-
-                ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Titel,Synopsis,Speaker,TwitterHandle -TableClass "table" -TheadClass "thead-dark"
+                #>
+                #ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Titel,Synopsis,Speaker,TwitterHandle -TableClass "table" -TheadClass "thead-dark"
 
                 #Upcoming Events
 
@@ -152,22 +164,12 @@ $HTML = html {
 
                 $EventArr = @()
 
-                $EventHash1 = @{
-                    Wo = "Online"
-                    wann = "Dienstag 3. Dezember 2019"
-                    Uhrzeit = "20:00"
-                    LinkToJoin = $Link
-                    Number = 1
-                }
-                $EventObj1 =  new-Object psobject -property $EventHash1
-                $EventArr += $EventObj1
-
                 $EventHash2 = @{
                     Wo = "Online"
                     wann = "Dienstag 7. Januar 2020"
                     Uhrzeit = "20:00"
                     LinkToJoin = $Link
-                    Number = 2
+                    Number = 1
                 }
                 $EventObj2 =  new-Object psobject -property $EventHash2
                 $EventArr += $EventObj2
@@ -177,10 +179,20 @@ $HTML = html {
                     wann = "Dienstag 4. Februar 2020"
                     Uhrzeit = "20:00"
                     LinkToJoin = $Link
-                    Number = 3
+                    Number = 2
                 }
                 $EventObj3 =  new-Object psobject -property $EventHash3
                 $EventArr += $EventObj3
+
+                $EventHash1 = @{
+                    Wo = "Online"
+                    wann = "Dienstag 3. März 2020"
+                    Uhrzeit = "20:00"
+                    LinkToJoin = $Link
+                    Number = 3
+                }
+                $EventObj1 =  new-Object psobject -property $EventHash1
+                $EventArr += $EventObj1
 
                 ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Wo,Wann,Uhrzeit,LinkToJoin -TableClass "table" -TheadClass "thead-dark"
             }
