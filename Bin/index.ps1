@@ -120,7 +120,7 @@ $HTML = html {
 
                 #Next Event
                 
-                h2 "Next Event - 3. Dezember"
+                h2 "Next Event - 7. Januar"
 
                 $EventArr = @()
 
