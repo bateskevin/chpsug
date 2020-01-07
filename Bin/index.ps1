@@ -152,7 +152,7 @@ $HTML = html {
 
                 $EventHash2 = @{
                     Titel = "CI/CD Pipelines"
-                    Synopsis = "In der Welt der automatisierung wollen wir keine Knöpfe mehr drücken. Wir wollen nur noch code schreiben und uns nicht jedes mal darum kuemmern den Code noch zu deployen und manuell zu testen. CICD hilf!"
+                    Synopsis = "In der Welt der automatisierung wollen wir keine Knoepfe mehr druecken. Wir wollen nur noch code schreiben und uns nicht jedes mal darum kuemmern den Code noch zu deployen und manuell zu testen. CICD hilf!"
                     Speaker = "Kevin Bates"
                     TwitterHandle = $Twitterhandle
                     Number = 2
