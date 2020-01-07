@@ -160,7 +160,7 @@ $HTML = html {
                 $EventObj1 =  new-Object psobject -property $EventHash2
                 $EventArr += $EventObj1
                 #>
-                #ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Titel,Synopsis,Speaker,TwitterHandle -TableClass "table" -TheadClass "thead-dark"
+                ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Titel,Synopsis,Speaker,TwitterHandle -TableClass "table" -TheadClass "thead-dark"
 
                 #Upcoming Events
 
