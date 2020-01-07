@@ -130,6 +130,12 @@ $HTML = html {
                     } -Class "btn btn-outline-primary"
                 } -Target _blank
 
+                $Twitterhandle2 = a -href "https://Twitter.com/mirzaegal" -Content {
+                    button -Content {
+                        "mirzaegal"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank
+
                 $EventHash1 = @{
                     Titel = "PSNotes, Balsam fuer dein Gedaechtnis!"
                     Synopsis = "PSNotes ist ein Opensource Modul, welches dir erlaubt CodeSnippets auf eine einfache Art und Weise zu hinterlegen."
@@ -151,10 +157,10 @@ $HTML = html {
                 $EventArr += $EventObj1
 
                 $EventHash2 = @{
-                    Titel = "CI/CD Pipelines"
-                    Synopsis = "In der Welt der automatisierung wollen wir keine Knoepfe mehr druecken. Wir wollen nur noch code schreiben und uns nicht jedes mal darum kuemmern den Code noch zu deployen und manuell zu testen. CICD hilf!"
-                    Speaker = "Kevin Bates"
-                    TwitterHandle = $Twitterhandle
+                    Titel = "Einfuehrung in Azure Automation Account"
+                    Synopsis = "Einfuehrung in den PowerShell Teil des Azure Automation Accounts: Einrichten, Runbook erstellen und ausfuehren, Runbooks verlinken, Runbooks importieren, Module importieren, Variable/Credentials erstellen und importieren, Schedules einrichten"
+                    Speaker = "Mirza Delic"
+                    TwitterHandle = $Twitterhandle2
                     Number = 2
                 }
                 $EventObj1 =  new-Object psobject -property $EventHash2
@@ -171,6 +177,8 @@ $HTML = html {
                         "Join"
                     } -Class "btn btn-outline-primary"
                 } -Target _blank 
+
+                
 
                 $EventArr = @()
 
