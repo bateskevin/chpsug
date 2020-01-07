@@ -119,7 +119,7 @@ $HTML = html {
                 } -Target _blank
 
                 #Next Event
-                <#
+                
                 h2 "Next Event - 3. Dezember"
 
                 $EventArr = @()
@@ -131,8 +131,8 @@ $HTML = html {
                 } -Target _blank
 
                 $EventHash1 = @{
-                    Titel = "Powershell 7 Roadmap und experimentelle Features"
-                    Synopsis = "Ich moechte euch aufzeigen, was wir von Powershell 7 alles erwarten koennen und euch damit motivieren die Previews mal anzuschauen. Powershell 7 wird im Dezember oder im Januar offiziell released. Es gibt aber schon mehrere Previews in denen man die neuen Features schon einmal testen kann. Ein paar dieser Featuers moechte ich euch gerne zeigen."
+                    Titel = "PSNotes, Balsam fuer dein Gedaechtnis!"
+                    Synopsis = "PSNotes ist ein Opensource Modul, welches dir erlaubt CodeSnippets auf eine einfache Art und Weise zu hinterlegen."
                     Speaker = "Kevin Bates"
                     TwitterHandle = $Twitterhandle
                     Number = 1
@@ -141,8 +141,18 @@ $HTML = html {
                 $EventArr += $EventObj1
 
                 $EventHash2 = @{
-                    Titel = "Website auf Github hosten"
-                    Synopsis = "in dieser Session moechte ich euch zeigen wie man eine mit Powersehll generierte website auf github kostenlos hosten kann. Backend Github Pages, Frontend PSHTML"
+                    Titel = "PSKoans, Powershell Denksport"
+                    Synopsis = "PSKoans ist ebenfalls ein Open Source Modul, welches viele Uebungen zu Themen rund um Powershell enthaelt."
+                    Speaker = "Kevin Bates"
+                    TwitterHandle = $Twitterhandle
+                    Number = 2
+                }
+                $EventObj1 =  new-Object psobject -property $EventHash2
+                $EventArr += $EventObj1
+
+                $EventHash2 = @{
+                    Titel = "CI/CD Pipelines"
+                    Synopsis = "In der Welt der automatisierung wollen wir keine Knöpfe mehr drücken. Wir wollen nur noch code schreiben und uns nicht jedes mal darum kuemmern den Code noch zu deployen und manuell zu testen. CICD hilf!"
                     Speaker = "Kevin Bates"
                     TwitterHandle = $Twitterhandle
                     Number = 2
