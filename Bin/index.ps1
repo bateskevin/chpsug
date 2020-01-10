@@ -147,7 +147,7 @@ $HTML = html {
                 $EventArr += $EventObj1
 
                 $EventHash2 = @{
-                    Titel = "PowerShell DSC - in Kürze"
+                    Titel = "PowerShell DSC - in Kuerze"
                     Synopsis = "In dem Slot werden kurz die Vorzuege von Desired State Configuration (DSC) dargestellt werden. Es werden grundlegende Ansaetze mit ein paar Demos untermalt. Aufgrund der Zeit werden einige Punkte leider nur angerissen."
                     Speaker = "Andreas Bittner"
                     TwitterHandle = $Twitterhandle
