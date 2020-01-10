@@ -120,13 +120,13 @@ $HTML = html {
 
                 #Next Event
                 
-                h2 "Next Event - 7. Januar"
+                h2 "Next Event - 4. Februar"
 
                 $EventArr = @()
 
-                $Twitterhandle = a -href "https://Twitter.com/_bateskevin" -Content {
+                $Twitterhandle = a -href "https://Twitter.com/Andreas_Bittner" -Content {
                     button -Content {
-                        "_bateskevin"
+                        "Andreas_Bittner"
                     } -Class "btn btn-outline-primary"
                 } -Target _blank
 
@@ -137,34 +137,25 @@ $HTML = html {
                 } -Target _blank
 
                 $EventHash1 = @{
-                    Titel = "PSNotes, Balsam fuer dein Gedaechtnis!"
-                    Synopsis = "PSNotes ist ein Opensource Modul, welches dir erlaubt CodeSnippets auf eine einfache Art und Weise zu hinterlegen."
-                    Speaker = "Kevin Bates"
-                    TwitterHandle = $Twitterhandle
+                    Titel = "Azure Automation - Hybrid Workers"
+                    Synopsis = "Hybrid Worker einrichten (Log Analytics Workspace verbinden), Runbooks auf Hybrid Worker laufen lassen."
+                    Speaker = "Mirza Delic"
+                    TwitterHandle = $Twitterhandle2
                     Number = 1
                 }
                 $EventObj1 =  new-Object psobject -property $EventHash1
                 $EventArr += $EventObj1
 
                 $EventHash2 = @{
-                    Titel = "PSKoans, Powershell Denksport"
-                    Synopsis = "PSKoans ist ebenfalls ein Open Source Modul, welches viele Uebungen zu Themen rund um Powershell enthaelt."
-                    Speaker = "Kevin Bates"
+                    Titel = "PowerShell DSC - in Kürze"
+                    Synopsis = "In dem Slot werden kurz die Vorzuege von Desired State Configuration (DSC) dargestellt werden. Es werden grundlegende Ansaetze mit ein paar Demos untermalt. Aufgrund der Zeit werden einige Punkte leider nur angerissen."
+                    Speaker = "Andreas Bittner"
                     TwitterHandle = $Twitterhandle
                     Number = 2
                 }
                 $EventObj1 =  new-Object psobject -property $EventHash2
                 $EventArr += $EventObj1
 
-                $EventHash2 = @{
-                    Titel = "Einfuehrung in Azure Automation Account"
-                    Synopsis = "Einfuehrung in den PowerShell Teil des Azure Automation Accounts: Einrichten, Runbook erstellen und ausfuehren, Runbooks verlinken, Runbooks importieren, Module importieren, Variable/Credentials erstellen und importieren, Schedules einrichten"
-                    Speaker = "Mirza Delic"
-                    TwitterHandle = $Twitterhandle2
-                    Number = 2
-                }
-                $EventObj1 =  new-Object psobject -property $EventHash2
-                $EventArr += $EventObj1
                 #>
                 ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Titel,Synopsis,Speaker,TwitterHandle -TableClass "table" -TheadClass "thead-dark"
 
@@ -184,7 +175,7 @@ $HTML = html {
 
                 $EventHash2 = @{
                     Wo = "Online"
-                    wann = "Dienstag 7. Januar 2020"
+                    wann = "Dienstag 4. Februar 2020"
                     Uhrzeit = "20:00"
                     LinkToJoin = $Link
                     Number = 1
@@ -194,7 +185,7 @@ $HTML = html {
 
                 $EventHash3 = @{
                     Wo = "Online"
-                    wann = "Dienstag 4. Februar 2020"
+                    wann = "Dienstag 3. Maerz 2020"
                     Uhrzeit = "20:00"
                     LinkToJoin = $Link
                     Number = 2
@@ -204,7 +195,7 @@ $HTML = html {
 
                 $EventHash1 = @{
                     Wo = "Online"
-                    wann = "Dienstag 3. März 2020"
+                    wann = "Dienstag 7. April 2020"
                     Uhrzeit = "20:00"
                     LinkToJoin = $Link
                     Number = 3
