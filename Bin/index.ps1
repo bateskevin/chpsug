@@ -124,36 +124,20 @@ $HTML = html {
 
                 $EventArr = @()
 
-                $Twitterhandle = a -href "https://Twitter.com/Andreas_Bittner" -Content {
-                    button -Content {
-                        "Andreas_Bittner"
-                    } -Class "btn btn-outline-primary"
-                } -Target _blank
-
-                $Twitterhandle2 = a -href "https://Twitter.com/mirzaegal" -Content {
+                $Twitterhandle2 = a -href "https://Twitter.com/_bateskevin" -Content {
                     button -Content {
                         "mirzaegal"
                     } -Class "btn btn-outline-primary"
                 } -Target _blank
 
                 $EventHash1 = @{
-                    Titel = "Azure Automation - Hybrid Workers"
-                    Synopsis = "Hybrid Worker einrichten (Log Analytics Workspace verbinden), Runbooks auf Hybrid Worker laufen lassen."
-                    Speaker = "Mirza Delic"
+                    Titel = "DockerPester"
+                    Synopsis = "DockerPester ist ein Module mit dem man Pester Tests in einem Docker Container laufen lassen kann und danach das PassThru Object von den Tests zurueck bekommt."
+                    Speaker = "Kevin Bates"
                     TwitterHandle = $Twitterhandle2
                     Number = 1
                 }
                 $EventObj1 =  new-Object psobject -property $EventHash1
-                $EventArr += $EventObj1
-
-                $EventHash2 = @{
-                    Titel = "PowerShell DSC - in Kuerze"
-                    Synopsis = "In dem Slot werden kurz die Vorzuege von Desired State Configuration (DSC) dargestellt werden. Es werden grundlegende Ansaetze mit ein paar Demos untermalt. Aufgrund der Zeit werden einige Punkte leider nur angerissen."
-                    Speaker = "Andreas Bittner"
-                    TwitterHandle = $Twitterhandle
-                    Number = 2
-                }
-                $EventObj1 =  new-Object psobject -property $EventHash2
                 $EventArr += $EventObj1
 
                 #>
@@ -175,10 +159,10 @@ $HTML = html {
 
                 $EventHash2 = @{
                     Wo = "Online"
-                    wann = "Dienstag 4. Februar 2020"
+                    wann = "Dienstag 5. Mai 2020"
                     Uhrzeit = "20:00"
                     LinkToJoin = $Link
-                    Number = 1
+                    Number = 3
                 }
                 $EventObj2 =  new-Object psobject -property $EventHash2
                 $EventArr += $EventObj2
@@ -188,7 +172,7 @@ $HTML = html {
                     wann = "Dienstag 3. Maerz 2020"
                     Uhrzeit = "20:00"
                     LinkToJoin = $Link
-                    Number = 2
+                    Number = 1
                 }
                 $EventObj3 =  new-Object psobject -property $EventHash3
                 $EventArr += $EventObj3
@@ -198,7 +182,7 @@ $HTML = html {
                     wann = "Dienstag 7. April 2020"
                     Uhrzeit = "20:00"
                     LinkToJoin = $Link
-                    Number = 3
+                    Number = 2
                 }
                 $EventObj1 =  new-Object psobject -property $EventHash1
                 $EventArr += $EventObj1
@@ -269,7 +253,7 @@ $HTML = html {
     }
 }
 
-$HTML | out-File -Filepath ..\index.html -Encoding utf8
+$HTML | out-File -Filepath ../index.html -Encoding utf8
 
 
 #start ..\Html\index.html
