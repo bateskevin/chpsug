@@ -129,16 +129,32 @@ $HTML = html {
                         "_bateskevin"
                     } -Class "btn btn-outline-primary"
                 } -Target _blank
+                
+                $Twitterhandle = a -href "https://Twitter.com/IISResetMe" -Content {
+                    button -Content {
+                        "IISResetMe"
+                    } -Class "btn btn-outline-primary"
+                } -Target _blank
 
                 $EventHash1 = @{
                     Titel = "DockerPester"
                     Synopsis = "DockerPester ist ein Module mit dem man Pester Tests in einem Docker Container laufen lassen kann und danach das PassThru Object von den Tests zurueck bekommt."
                     Speaker = "Kevin Bates"
                     TwitterHandle = $Twitterhandle2
-                    Number = 1
+                    Number = 2
                 }
                 $EventObj1 =  new-Object psobject -property $EventHash1
                 $EventArr += $EventObj1
+                
+                $EventHash2 = @{
+                    Titel = "tips-n-tricks for designing nicer parameters for your advanced functions"
+                    Synopsis = "Tipps and tricks for parameters in functions."
+                    Speaker = "Kevin Bates"
+                    TwitterHandle = $Twitterhandle
+                    Number = 1
+                }
+                $EventObj2 =  new-Object psobject -property $EventHash2
+                $EventArr += $EventObj2
 
                 #>
                 ConvertTo-PSHTMLTable -Object ($EventArr | sort number) -Properties Titel,Synopsis,Speaker,TwitterHandle -TableClass "table" -TheadClass "thead-dark"
