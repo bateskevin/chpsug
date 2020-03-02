@@ -149,7 +149,7 @@ $HTML = html {
                 $EventHash2 = @{
                     Titel = "tips-n-tricks for designing nicer parameters for your advanced functions"
                     Synopsis = "Tipps and tricks for parameters in functions."
-                    Speaker = "Kevin Bates"
+                    Speaker = "Mathias Jessen"
                     TwitterHandle = $Twitterhandle
                     Number = 1
                 }
