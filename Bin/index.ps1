@@ -126,7 +126,7 @@ $HTML = html {
 
                 $Twitterhandle2 = a -href "https://Twitter.com/_bateskevin" -Content {
                     button -Content {
-                        "mirzaegal"
+                        "_bateskevin"
                     } -Class "btn btn-outline-primary"
                 } -Target _blank
 
