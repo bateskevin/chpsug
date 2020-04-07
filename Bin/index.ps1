@@ -124,22 +124,22 @@ $HTML = html {
 
                 $EventArr = @()
 
-                $Twitterhandle2 = a -href "https://Twitter.com/_bateskevin" -Content {
+                $Twitterhandle2 = a -href "https://Twitter.com/Andreas_Bittner" -Content {
                     button -Content {
-                        "_bateskevin"
+                        "@Andreas_Bittner"
                     } -Class "btn btn-outline-primary"
                 } -Target _blank
                 
-                $Twitterhandle = a -href "https://Twitter.com/IISResetMe" -Content {
+                $Twitterhandle = a -href "https://Twitter.com/it_tinuwalther" -Content {
                     button -Content {
-                        "IISResetMe"
+                        "@it_tinuwalther"
                     } -Class "btn btn-outline-primary"
                 } -Target _blank
 
                 $EventHash1 = @{
-                    Titel = "DockerPester"
-                    Synopsis = "DockerPester ist ein Module mit dem man Pester Tests in einem Docker Container laufen lassen kann und danach das PassThru Object von den Tests zurueck bekommt."
-                    Speaker = "Kevin Bates"
+                    Titel = "Azure ARM mein (schwiriger) Einstieg"
+                    Synopsis = "ARM Templates sind eine Tolle Sache und ich will euch in diesem Slot kurz meine Herangehensweise praesentieren und welche Stolpersteine ich damit hatte. Demos kommen natuerlich nicht zu Kurz."
+                    Speaker = "Andreas Bittner"
                     TwitterHandle = $Twitterhandle2
                     Number = 2
                 }
@@ -147,9 +147,9 @@ $HTML = html {
                 $EventArr += $EventObj1
                 
                 $EventHash2 = @{
-                    Titel = "tips-n-tricks for designing nicer parameters for your advanced functions"
-                    Synopsis = "Tipps and tricks for parameters in functions."
-                    Speaker = "Mathias Jessen"
+                    Titel = "Was ist PsNetTools?"
+                    Synopsis = "Eine kurze Einfuehrung in mein Modul PsNetTools. Was ist PsNetTools, welche Commands sind in PsNetTools enthalten und wie kann PsNetTools im Daily Business eingesetzt werden."
+                    Speaker = "Martin Walther"
                     TwitterHandle = $Twitterhandle
                     Number = 1
                 }
@@ -178,17 +178,17 @@ $HTML = html {
                     wann = "Dienstag 5. Mai 2020"
                     Uhrzeit = "20:00"
                     LinkToJoin = $Link
-                    Number = 3
+                    Number = 2
                 }
                 $EventObj2 =  new-Object psobject -property $EventHash2
                 $EventArr += $EventObj2
 
                 $EventHash3 = @{
                     Wo = "Online"
-                    wann = "Dienstag 3. Maerz 2020"
+                    wann = "Dienstag 2. Juni 2020"
                     Uhrzeit = "20:00"
                     LinkToJoin = $Link
-                    Number = 1
+                    Number = 3
                 }
                 $EventObj3 =  new-Object psobject -property $EventHash3
                 $EventArr += $EventObj3
@@ -198,7 +198,7 @@ $HTML = html {
                     wann = "Dienstag 7. April 2020"
                     Uhrzeit = "20:00"
                     LinkToJoin = $Link
-                    Number = 2
+                    Number = 1
                 }
                 $EventObj1 =  new-Object psobject -property $EventHash1
                 $EventArr += $EventObj1
